@@ -1,0 +1,274 @@
+[
+    {
+        "Provider_ID": "P0001",
+        "Provider_Name": "Assistive Tech Solutions",
+        "Address": "12 Station Street, Macksville, NSW",
+        "Latitude": -30.7097541,
+        "Longitude": 152.9162383,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Orthotics",
+            "Hearing equipment",
+            "Daily living aids",
+            "Prosthetics"
+        ]
+    },
+    {
+        "Provider_ID": "P0002",
+        "Provider_Name": "Mobility Aids Centre",
+        "Address": "13 Nambucca Street, Nambucca Heads, NSW",
+        "Latitude": -30.6437447,
+        "Longitude": 152.9939999,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Walking aids",
+            "Equipment or aids for dressing or specialised clothing",
+            "Hearing equipment",
+            "Seating and positioning equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0003",
+        "Provider_Name": "Disability Support Group",
+        "Address": "15 Ocean View Drive, Nambucca Heads, NSW",
+        "Latitude": -30.64318,
+        "Longitude": 153.00884,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Orthotics",
+            "Bathroom and toilet equipment",
+            "Transfer equipment",
+            "Vision aids",
+            "Environmental control systems"
+        ]
+    },
+    {
+        "Provider_ID": "P0004",
+        "Provider_Name": "Care and Mobility",
+        "Address": "25 Pacific Highway, Urunga, NSW",
+        "Latitude": -30.494349,
+        "Longitude": 153.0155125,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Transfer equipment",
+            "Beds and pressure care mattresses and accessories",
+            "Vision aids",
+            "Wheelchairs and scooters"
+        ]
+    },
+    {
+        "Provider_ID": "P0005",
+        "Provider_Name": "Wellness Equipments",
+        "Address": "30 High Street, Macksville, NSW",
+        "Latitude": -30.7078,
+        "Longitude": 152.92029,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Orthotics",
+            "Bathroom and toilet equipment",
+            "Respiration & Circulation Equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0006",
+        "Provider_Name": "Access Assist",
+        "Address": "8 Water Street, Nambucca Heads, NSW",
+        "Latitude": -30.64318,
+        "Longitude": 153.00884,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Wheelchairs and scooters",
+            "Hearing equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0007",
+        "Provider_Name": "Empower Mobility",
+        "Address": "50 Main Road, Macksville, NSW",
+        "Latitude": -30.7078,
+        "Longitude": 152.92029,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Vision aids",
+            "Beds and pressure care mattresses and accessories",
+            "Seating and positioning equipment",
+            "Communication and information equipment",
+            "Rehabilitation equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0008",
+        "Provider_Name": "Total Care Supplies",
+        "Address": "100 Market Street, Macksville, NSW",
+        "Latitude": -30.7078,
+        "Longitude": 152.92029,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Personal Alarms",
+            "Environmental control systems",
+            "Assistive products for household tasks and access",
+            "Specialised household furniture"
+        ]
+    },
+    {
+        "Provider_ID": "P0009",
+        "Provider_Name": "Easy Access Services",
+        "Address": "5 West Street, Urunga, NSW",
+        "Latitude": -30.49701,
+        "Longitude": 153.01422,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Orthotics",
+            "Hearing equipment",
+            "Respiration & Circulation Equipment",
+            "Daily living aids",
+            "Walking aids"
+        ]
+    },
+    {
+        "Provider_ID": "P0010",
+        "Provider_Name": "Care Solutions",
+        "Address": "20 River Road, Macksville, NSW",
+        "Latitude": -30.7078,
+        "Longitude": 152.92029,
+        "Postcode": 2454,
+        "AT_Types": [
+            "Daily living aids",
+            "Bathroom and toilet equipment",
+            "Personal Alarms",
+            "Environmental control systems",
+            "Equipment or aids for dressing or specialised clothing"
+        ]
+    },
+    {
+        "Provider_ID": "P0011",
+        "Provider_Name": "Supportive Tech",
+        "Address": "45 High Street, Launceston, TAS",
+        "Latitude": -41.4377596,
+        "Longitude": 147.1474958,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Seating and positioning equipment",
+            "Communication and information equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0012",
+        "Provider_Name": "Life Enhancements",
+        "Address": "32 George Street, Launceston, TAS",
+        "Latitude": -41.4355244,
+        "Longitude": 147.1398668,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Personal Alarms",
+            "Prosthetics",
+            "Seating and positioning equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0013",
+        "Provider_Name": "Move Better",
+        "Address": "10 Brisbane Street, Launceston, TAS",
+        "Latitude": -41.4400912,
+        "Longitude": 147.1338606,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Communication and information equipment",
+            "Beds and pressure care mattresses and accessories"
+        ]
+    },
+    {
+        "Provider_ID": "P0014",
+        "Provider_Name": "Pro Mobility",
+        "Address": "80 Charles Street, Launceston, TAS",
+        "Latitude": -41.4377155,
+        "Longitude": 147.13706,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Transfer equipment",
+            "Beds and pressure care mattresses and accessories"
+        ]
+    },
+    {
+        "Provider_ID": "P0015",
+        "Provider_Name": "Wellbeing Access",
+        "Address": "120 York Street, Launceston, TAS",
+        "Latitude": -41.4337761,
+        "Longitude": 147.1471516,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Beds and pressure care mattresses and accessories",
+            "Orthotics",
+            "Environmental control systems",
+            "Prosthetics",
+            "Vision aids"
+        ]
+    },
+    {
+        "Provider_ID": "P0016",
+        "Provider_Name": "Easy Mobility",
+        "Address": "30 Invermay Road, Launceston, TAS",
+        "Latitude": -41.4282511,
+        "Longitude": 147.1379576,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Daily living aids",
+            "Environmental control systems",
+            "Prosthetics",
+            "Respiration & Circulation Equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0017",
+        "Provider_Name": "Mobility Plus",
+        "Address": "50 Frankland Street, Launceston, TAS",
+        "Latitude": -41.4455782,
+        "Longitude": 147.1419201,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Hearing equipment",
+            "Communication and information equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0018",
+        "Provider_Name": "Assistance 4 All",
+        "Address": "15 Tamar Street, Launceston, TAS",
+        "Latitude": -41.4379609,
+        "Longitude": 147.1348728,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Transfer equipment",
+            "Specialised household furniture",
+            "Daily living aids",
+            "Hearing equipment",
+            "Assistive products for household tasks and access"
+        ]
+    },
+    {
+        "Provider_ID": "P0019",
+        "Provider_Name": "Community Mobility",
+        "Address": "25 St. John Street, Launceston, TAS",
+        "Latitude": -41.4324919,
+        "Longitude": 147.1340002,
+        "Postcode": 7250,
+        "AT_Types": [
+            "Orthotics",
+            "Seating and positioning equipment",
+            "Rehabilitation equipment"
+        ]
+    },
+    {
+        "Provider_ID": "P0020",
+        "Provider_Name": "Care Essentials",
+        "Address": "110 La Trobe Street, Melbourne, VIC",
+        "Latitude": -37.8083755,
+        "Longitude": 144.9676751,
+        "Postcode": 3043,
+        "AT_Types": [
+            "Vision aids",
+            "Assistive products for household tasks and access",
+            "Seating and positioning equipment"
+        ]
+    }
+]
