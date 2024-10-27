@@ -3,7 +3,18 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-// Define a custom icon configuration for all markers
+// Define a custom icon for the user's location with a green marker icon URL
+const userLocationIcon = new L.Icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png', // Green icon URL
+    iconRetinaUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  });
+
+// Define the default icon for provider markers
 const defaultIcon = new L.Icon({
   iconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
   iconRetinaUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
@@ -14,14 +25,12 @@ const defaultIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-// Fit map bounds based on provider and user locations
 const FitBounds = ({ providers, userLocation }) => {
   const map = useMap();
 
   useEffect(() => {
     if (providers.length === 0) return;
 
-    // Combine user location with provider locations for fitting bounds
     const locations = [
       [userLocation[0], userLocation[1]],
       ...providers.map(provider => [provider.Latitude, provider.Longitude])
@@ -39,10 +48,10 @@ const MapComponent = ({ providers, userLocation }) => {
     <MapContainer center={userLocation} zoom={12} style={{ height: '400px', width: '100%' }}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       
-      <FitBounds providers={providers} userLocation={userLocation} /> {/* Automatically fit map to bounds */}
+      <FitBounds providers={providers} userLocation={userLocation} />
       
-      {/* Marker for User's Location */}
-      <Marker position={userLocation} icon={defaultIcon}>
+      {/* Marker for User's Location with Green Icon */}
+      <Marker position={userLocation} icon={userLocationIcon}>
         <Popup>
           <strong>Your Location</strong><br />
           {userLocation[0]}, {userLocation[1]}
