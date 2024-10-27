@@ -14,11 +14,23 @@ const defaultIcon = new L.Icon({
   shadowSize: [41, 41],
 });
 
-const RecenterMap = ({ userLocation }) => {
+// Fit map bounds based on provider and user locations
+const FitBounds = ({ providers, userLocation }) => {
   const map = useMap();
+
   useEffect(() => {
-    map.setView(userLocation, 12);
-  }, [userLocation]);
+    if (providers.length === 0) return;
+
+    // Combine user location with provider locations for fitting bounds
+    const locations = [
+      [userLocation[0], userLocation[1]],
+      ...providers.map(provider => [provider.Latitude, provider.Longitude])
+    ];
+    
+    const bounds = L.latLngBounds(locations);
+    map.fitBounds(bounds, { padding: [50, 50] });
+  }, [providers, userLocation, map]);
+
   return null;
 };
 
@@ -26,8 +38,9 @@ const MapComponent = ({ providers, userLocation }) => {
   return (
     <MapContainer center={userLocation} zoom={12} style={{ height: '400px', width: '100%' }}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-      <RecenterMap userLocation={userLocation} />
-
+      
+      <FitBounds providers={providers} userLocation={userLocation} /> {/* Automatically fit map to bounds */}
+      
       {/* Marker for User's Location */}
       <Marker position={userLocation} icon={defaultIcon}>
         <Popup>
@@ -50,5 +63,3 @@ const MapComponent = ({ providers, userLocation }) => {
 };
 
 export default MapComponent;
-
-

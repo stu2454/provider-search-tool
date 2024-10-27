@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Style for dropdowns with increased specificity */
+select, select *, select option {
+  font-size: 18px !important; /* Enforce font size for all elements within select */
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for input fields to ensure consistency with dropdowns */
+input {
+  font-size: 18px; /* Match font size with dropdowns */
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #6B2976;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   min-height: 100vh;
+}
+
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Top section with SearchBar and Map side by side */
+.top-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-height: 50vh;
+  gap: 20px;
+  padding-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 400px;
+  height: 50vh; /* Restrict map height to half the screen */
+  padding-top: 80px;
+}
+
+/* Bottom section with Provider Details */
+.provider-details-container {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 40vh; /* Limit height to fit in the bottom half */
+  margin-top: 20px;
 }
