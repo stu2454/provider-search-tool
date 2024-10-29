@@ -97,36 +97,35 @@ const SearchBar = ({ onSearch }) => {
         </select>
       </label>
       
-      <label>
-        Postcode:
+      <div style={{ margin: "10px 0" }}>
+        <label>Postcode:</label>
         <input
           type="text"
           name="postcode"
           value={address.postcode}
           onChange={handleAddressChange}
-          style={{ width: "100%", padding: "10px", margin: "10px 0" }}
+          style={{ width: "80px", padding: "10px", display: "block", marginTop: "5px" }}
         />
-      </label>
+      </div>
       
       <button
-         onClick={handleSearch}
-         style={{
+        onClick={handleSearch}
+        style={{
           width: "100%",
           padding: "15px",
           fontSize: "18px",
           fontWeight: "bold",
-          backgroundColor: "#ffffff", // White background
-          color: "#000000", // Black text
-          border: "2px solid #000000", // Optional black border for definition
+          backgroundColor: "#ffffff",
+          color: "#000000",
+          border: "2px solid #000000",
           borderRadius: "8px",
           cursor: "pointer",
           marginTop: "10px",
           textTransform: "uppercase",
-       }}
->
-  Search
-</button>
-
+        }}
+      >
+        Search
+      </button>
     </div>
   );
 };

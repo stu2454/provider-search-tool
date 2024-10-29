@@ -1,78 +1,94 @@
 /* App.css */
 
-/* Style for dropdowns with increased specificity */
-select, select *, select option {
-  font-size: 18px !important; /* Enforce font size for all elements within select */
-  padding: 10px;
+/* Set background on full-width-container */
+.full-width-container {
   width: 100%;
-  margin: 10px 0;
-  box-sizing: border-box;
-}
-
-/* Style for input fields to ensure consistency with dropdowns */
-input {
-  font-size: 18px; /* Match font size with dropdowns */
-  padding: 10px;
-  margin: 10px 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #6B2976;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-#root {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  background-color: #6B2976; /* NDIS purple background */
+  color: #ffffff;
   min-height: 100vh;
 }
 
+/* Main app container */
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
+  width: 80%;
+  max-width: 1400px;
+  min-width: 800px;
   gap: 20px;
+  background-color: transparent; /* Ensure transparency to show full-width background */
 }
 
-/* Top section with SearchBar and Map side by side */
+/* Title */
+.app-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 40px 0;
+  text-align: center;
+}
+
+/* Top section with search fields and map */
 .top-section {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  max-height: 50vh;
   gap: 20px;
-  padding-bottom: 20px;
+  align-items: flex-end;
+  max-height: 50vh;
+  margin-top: 20px;
 }
 
+/* Search fields container */
 .search-container {
   flex: 1;
   padding: 20px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
+/* Style for input fields and dropdowns */
+input[type="text"], select {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+}
+/* Style for the postcode input field to fit 4 digits */
+input[name="postcode"] {
+  width: 60px; /* Adjust width as needed */
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Map container */
 .map-container {
   flex: 1;
+  height: 50vh;
   min-width: 400px;
-  height: 50vh; /* Restrict map height to half the screen */
-  padding-top: 80px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  top: -40px;
 }
 
-/* Bottom section with Provider Details */
+/* Feedback/results container */
 .provider-details-container {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
   padding: 20px;
-  width: 90%;
+  padding-top: 30px;
+  font-size: 16px;
+  width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
-  max-height: 40vh; /* Limit height to fit in the bottom half */
+  max-height: 40vh;
   margin-top: 20px;
+  text-align: left;
 }
